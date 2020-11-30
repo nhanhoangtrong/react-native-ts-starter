@@ -1,0 +1,15 @@
+import React, { FC } from 'react';
+import { StackScreenProps } from '@react-navigation/stack';
+import { View, Text } from 'react-native';
+
+import { styles } from './styles';
+
+const {{ pascalCase screenName }}Screen: FC<StackScreenProps<any>> = ({ navigation }) => {
+  return (
+    <View style={styles.{{ camelCase screenName }}Wrapper}>
+      <Text>{{ titleCase screenName }}</Text>
+    </View>
+  );
+};
+
+export default {{ pascalCase screenName }}Screen;

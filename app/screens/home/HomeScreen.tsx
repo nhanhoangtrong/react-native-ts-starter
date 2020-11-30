@@ -1,12 +1,13 @@
 import React, { FC } from 'react';
 import { StackScreenProps } from '@react-navigation/stack';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
 import { Button } from 'react-native-elements';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+
+import { styles } from './styles';
 
 const HomeScreen: FC<StackScreenProps<any>> = ({ navigation }) => {
   return (
-    <View style={styles.screenWrapper}>
+    <View style={styles.homeScreenWrapper}>
       <Text>Home Screen</Text>
       <Button
         title="Go to Details"
@@ -15,15 +16,5 @@ const HomeScreen: FC<StackScreenProps<any>> = ({ navigation }) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  screenWrapper: {
-    backgroundColor: Colors.lighter,
-    flex: 1,
-    height: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 export default HomeScreen;
